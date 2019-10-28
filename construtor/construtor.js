@@ -1,10 +1,25 @@
 
-//Classe Cliente com os parâmetros _nome, _telefone, _cpf
+//Classe Cliente com os parâmetros hash
 
-var Cliente = function(_nome,_telefone,_cpf){
-	this.nome = _nome;
-	this.telefone=_telefone;
-	this.cpf = _cpf
+var Cliente = function(_campos){
+
+	if(_campos !=undefined){
+
+		if(_campos.nome !=undefined)
+			this.nome = _campos.nome;
+		else
+			this.nome = "";
+
+		if(_campos.telefone !=undefined)
+				this.telefone = _campos.telefone;
+			else
+				this.telefone = "";
+
+		if(_campos.cpf !=undefined)
+				this.cpf = _campos.cpf;
+			else
+				this.cpf = "";
+	}
 
 	this.Mostrar = function(){
 

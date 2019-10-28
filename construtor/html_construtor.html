@@ -11,18 +11,23 @@
 
 <script >
 		
-	var c=new Cliente("Rosangela","14444","455555");
+  //Exemplo de COnstrutor por Hash		
+	var c=new Cliente({nome:"Rosangela"});
 	c.GravarEmMemoria();
 
 	document.write("<hr>");
 
 
-	var c2=new Cliente("Maria","99999","41111");
+	var c2=new Cliente({nome:"José"});
 	c2.GravarEmMemoria();
 
-	var c3=new Cliente("José","7777","147777");
+	var c3=new Cliente({nome:"Maria"});
 	c3.GravarEmMemoria();
 
+
+  
+	var c4=new Cliente({nome:"Joaquim",telefone:"7777",cpf:"147777"});
+	c4.GravarEmMemoria();
 
 	Cliente.todos()
 
