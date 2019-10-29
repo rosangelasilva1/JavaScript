@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script src="file:///C:/cursos/JavaScript/Heranca/Pessoa.js"></script>
+<script src="file:///C:/cursos/JavaScript/Heranca/Fornecedor.js"></script>
+<script src="file:///C:/cursos/JavaScript/Heranca/Cliente.js"></script>
+
+<script >
+	debugger
+	var pessoa1 = new Pessoa(); //instanciando a classe base Pessoa
+	pessoa1.nome="Rosangela";
+	pessoa1.telefone="7777777";
+	pessoa1.cpf="74587444444";
+    pessoa1.GravarEmMemoria();
+
+	var pessoa2 = new Pessoa(); //instanciando a classe base Pessoa
+	pessoa2.nome="José";
+	pessoa2.telefone="77444444";
+	pessoa2.cpf="55555555555";
+    pessoa2.GravarEmMemoria();
+
+    Pessoa.todos();
+
+	//Este exemplo nos mostra a herança dos atributos da classe base Pessoa : nome, telefone e Cpf 
+	//dentro da classe filha Fornecedores
+    var forn=new Fornecedor();
+    forn.nome="Fornecedor1"
+    forn.telefone = "foneFornecedor1"
+    forn.cpf="55555555555";
+    forn.Mostrar();//Método da classe base Pessoa
+    
+</script>
+<body>
+
+</body>
+</html>
